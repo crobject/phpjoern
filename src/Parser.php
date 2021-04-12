@@ -182,7 +182,7 @@ function parse_file( $path, $exporter) : int {
   echo "Parsing file ", $finfo->getPathname(), PHP_EOL;
 
   try {
-    $ast = ast\parse_file( $path, $version = 30);
+    $ast = ast\parse_file( $path, $version = 70);
 
     // The above may throw a ParseError. We only export to the output
     // file(s) if that didn't happen.
